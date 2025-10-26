@@ -1,0 +1,26 @@
+Todolist {
+    layout: vertical;  /* statt grid */
+    padding: 0 1;
+    margin: 0;
+}
+
+#toolbar { padding: 0 1; }
+
+#tasks-scroll {
+    width: 100%;
+    height: 1fr;       /* füllt den verfügbaren Platz */
+    margin: 0;
+    padding: 1 2;
+}
+
+/* Task-Stile */
+.task-row {
+    min-height: 3;
+    margin: 1 0;
+    padding: 1 2;
+    border: solid #3b82f6;
+}
+.task-row .task-name { width: 55%; padding-right: 2; }
+.task-row .task-date { width: 12; text-align: right; opacity: 0.8; margin-right: 2; }
+.task-row Button { margin-left: 1; min-width: 8; }
+.task-row:last-child { margin-bottom: 0; }
